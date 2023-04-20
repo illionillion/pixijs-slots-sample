@@ -1,21 +1,34 @@
 import { Application, Graphics, Text } from "pixi.js";
 
+/**
+ * ウィンドウ横幅初期値
+ */
 const initialWidth = 400;
+/**
+ * ウィンドウ横幅初期値
+ */
 const initialHeight = 200;
 
 const main = () => {
+  /**
+   * Applicationオブジェクト生成
+   */
   const app = new Application({ width: initialWidth, height: initialHeight });
-  // document.body.append(app.view as unknown as string | Node);
-  document.body.append(app.view as HTMLCanvasElement);
+  document.body.append(app.view as HTMLCanvasElement); // DOMにマウント
 
+  /**
+   * リサイズ用
+   */
   const onResize = () => {
     app.view.width = window.innerWidth;
     app.view.height = window.innerHeight;
     app.screen.width = window.innerWidth;
     app.screen.height = window.innerHeight;
   };
-  onResize();
-  window.addEventListener("resize", onResize);
+  onResize(); // 初回リサイズ
+  window.addEventListener("resize", onResize); // 登録
+
+  // const loader = PIXI.loader.shared; // 使えない
 
   const text = new Text("Hello World!");
   text.style.fill = "#ffffff";
