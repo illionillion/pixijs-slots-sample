@@ -1,3 +1,4 @@
 node_modules
 lib-ts
 .DS_Store
+./www/pixijs-slots-sample.js

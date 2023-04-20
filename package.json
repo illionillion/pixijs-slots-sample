@@ -8,6 +8,7 @@
     "tslint": "tslint -p .",
     "typedoc": "typedoc -p .",
     "webpack": "webpack",
+    "webpack-watch": "webpack --watch",
     "server": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

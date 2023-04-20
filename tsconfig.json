@@ -35,13 +35,13 @@
       "name": "pixijs-slots-sample",
       "mode": "file",
       "out": "./docs",
-    //   "gitRevision": "develop",
-    //   "ignoreCompilerErrors": true,
-    //   "includeDeclarations": true,
-    //   "excludeExternals": true,
-    //   "excludePrivate": false,
-    //   "excludeProtected": false,
-    //   "excludeNotExported": false,
-    //   "preserveConstEnums": true
+      "gitRevision": "develop",
+      "ignoreCompilerErrors": true,
+      "includeDeclarations": true,
+      "excludeExternals": true,
+      "excludePrivate": false,
+      "excludeProtected": false,
+      "excludeNotExported": false,
+      "preserveConstEnums": true
     }
   }

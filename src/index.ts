@@ -5,7 +5,7 @@ const main = () => {
   // document.body.append(app.view as unknown as string | Node);
   document.body.append(app.view as HTMLCanvasElement);
 
-  const text = new Text("Hello World!!");
+  const text = new Text("Hello World!");
   text.style.fill = "#ffffff";
   text.anchor.set(0.5);
   text.x = app.screen.width / 2;
@@ -15,8 +15,8 @@ const main = () => {
   graphics.beginFill(0xff0000);
   graphics.drawRect(0, 0, 100, 100);
   graphics.endFill();
-  graphics.x = 100;
-  graphics.y = 100;
+  graphics.x = 0;
+  graphics.y = 0;
   app.stage.addChild(graphics);
   app.stage.addChild(text);
   // ゲームループを開始する
